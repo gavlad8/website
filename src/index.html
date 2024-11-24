@@ -1,17 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descriere Personală</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ccc;
+            font-family: 'Georgia', serif;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #111;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            color: #fff;
+        }
+
+        th {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style-type: square;
+            color: #ccc;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        button {
+            font-size: 1.5em;
+            color: white;
+            width: 100%;
+            font-family: 'Georgia', serif;
+            height: 40px;
+            border-radius: 8px;
+            background-color: #6E6B68;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5b5856;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #4a4745;
+            transform: scale(0.98);
+        }
+    </style>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+
+    <h1>Descriere Personală</h1>
+
+    <section id="identificare">
+        <h2>Date de Identificare</h2>
+        <p>Nume: Gavrila Vladut-Vasile</p>
+        <p>Vârstă: 18 ani</p>
+    </section>
+
+    <section id="contact">
+        <h2>Date de Contact</h2>
+        <p>Email: vladut.gavrila@gmail.com</p>
+        <p>Telefon: +40 742 883 449</p>
+    </section>
+
+    <section id="imagine">
+        <h2>Imagine de Profil</h2>
+        <img src="profile.jpg" alt="Profil" class="profile-image">
+    </section>
+
+    <section id="descriere">
+        <h2>Descriere</h2>
+        <p>Sunt un dezvoltator web pasionat, cu experiență în diverse proiecte de front-end și back-end. Am o pasiune pentru
+           tehnologie, inovație și dezvoltarea aplicațiilor care aduc valoare utilizatorilor.</p>
+    </section>
+
+    <section id="hobbyuri">
+        <h2>Hobby-uri</h2>
+        <ul>
+            <li>Fotografie</li>
+            <li>Călătorii</li>
+            <li>Citit</li>
+            <li>Gătit</li>
+        </ul>
+    </section>
+
+    <section>
+        <button id="infrumuseteaza">Infrumusețează pagina</button>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
