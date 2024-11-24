@@ -1,5 +1,5 @@
 function afiseazaVarsta() {
-    const anulNasterii = 2005; // Schimbă cu anul corect
+    const anulNasterii = 2006; 
     const dataCurenta = new Date();
     const varsta = dataCurenta.getFullYear() - anulNasterii;
     const elementAn = document.getElementById("an-nastere");
