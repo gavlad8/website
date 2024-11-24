@@ -1,3 +1,21 @@
+function afiseazaVarsta() {
+    const anulNasterii = 2005; // Schimbă cu anul corect
+    const dataCurenta = new Date();
+    const varsta = dataCurenta.getFullYear() - anulNasterii;
+    const elementAn = document.getElementById("an-nastere");
+    elementAn.textContent = `Vârsta: ${varsta} ani`;
+}
+
+function valideazaEmail() {
+    const email = document.getElementById("email").value;
+    const mesajEroare = document.getElementById("email-eroare");
+    if (email.includes("@")) {
+        mesajEroare.style.display = "none";
+    } else {
+        mesajEroare.style.display = "block";
+    }
+}
+
 document.getElementById('infrumuseteaza').addEventListener('click', function() {
 
     document.body.style.background = 'linear-gradient(to right, #1a1a2e, #16213e, #0f3460)';
